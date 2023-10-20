@@ -7,10 +7,13 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Column(children: [Text("its Login"),
-      ElevatedButton(onPressed: ()=> Get.back(), child: Text('Back'))
-      ]),),
-      backgroundColor: Color.fromARGB(255, 119, 120, 121) ,
+      body: Center(child: Column(children: [ const Padding(
+            padding: EdgeInsets.only(top: 100, bottom: 30, left: 30, right: 30)),Container( width: 300, height: 300, color: Color.fromARGB(255, 220, 115, 201),
+            child: Center( child: Column(children: [const Padding(
+            padding: EdgeInsets.only(top: 80, bottom: 30, left: 30, right: 30)),Text("its Login"),
+       ElevatedButton(onPressed: ()=> Get.back(), child: Text('Back'))],))
+    )]),),
+      backgroundColor: Color.fromARGB(255, 189, 192, 195) ,
       
     );
   }
