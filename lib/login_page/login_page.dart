@@ -10,6 +10,7 @@ class LoginPage extends StatelessWidget {
       body: Center(child: Column(children: [Text("its Login"),
       ElevatedButton(onPressed: ()=> Get.back(), child: Text('Back'))
       ]),),
+      backgroundColor: Color.fromARGB(255, 119, 120, 121) ,
       
     );
   }

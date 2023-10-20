@@ -10,6 +10,7 @@ class AccountPage extends StatelessWidget {
       body: Center(child: Column(children: [Text("its Account"),
       ElevatedButton(onPressed: ()=> Get.back(), child: Text('Back'))
       ]),),
+      backgroundColor: Color.fromARGB(255, 240, 241, 163) ,
     );
   }
 }
