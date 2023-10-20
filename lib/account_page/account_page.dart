@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({super.key});
@@ -6,9 +7,9 @@ class AccountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Its account'),
-      ),
+      body: Center(child: Column(children: [Text("its Account"),
+      ElevatedButton(onPressed: ()=> Get.back(), child: Text('Back'))
+      ]),),
     );
   }
 }

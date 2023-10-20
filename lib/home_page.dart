@@ -8,11 +8,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
    print("BUILD");
     return Scaffold(
-      body: Column(
+      body: Center( child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text("ITS HOME PAGE"),
           ElevatedButton(onPressed: ()=> Get.toNamed('/login'),
-          child: Text('Login'),)
-        ],),);
+          child: Text('Login'),),
+          SizedBox(height: 10),
+          ElevatedButton(onPressed: ()=> Get.toNamed('/acc'),
+          child: Text('Account'),)
+        ],),));
   }
 }
