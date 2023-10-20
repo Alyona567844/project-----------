@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: Color.fromARGB(255, 225, 198, 117)),
+      theme: ThemeData(scaffoldBackgroundColor: Color.fromARGB(255, 233, 203, 115)),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       getPages: [
